@@ -1,0 +1,117 @@
+body {
+  font-family: sans-serif;
+}
+
+label {
+  padding-right: 10px;
+  font-weight: bold;
+}
+div {
+  padding-bottom: 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+.heading {
+  font-size: 50px;
+}
+
+.subheading {
+  font-size: 25px;
+  border-bottom: solid 1px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.question {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+.label {
+  color: #0000FF;
+}
+
+.cart_row {
+  clear: both;
+}
+
+.cart_col {
+  width: 200px;
+  float: left;
+}
+
+.money_col {
+  width: 75px;
+  float: left;
+}
+
+.row {
+  clear: both;
+  padding-bottom: 5px;
+}
+
+.col {
+  min-height: 10px;
+  min-width: 120px;
+  float: left;
+}
+
+.dollarsign {
+  padding-right: 2px;
+  text-align: right;
+  float: right;
+}
+
+.money {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.bottom_border {
+  border-bottom: 1px solid;
+  margin-bottom: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.float {
+  float: left;
+}
+
+.error {
+  color: #FF0000;
+}
+
+#cart {
+  margin-bottom: 50px;
+}
+
+#footer {
+  padding-top: 5px;
+  font-size: 9px;
+  color: #BBBBBB;
+}
+
+#image {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+
+#formheading {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
