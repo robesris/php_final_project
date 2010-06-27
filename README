@@ -1,0 +1,10 @@
+6/26/2010
+Final Project for Programming PHP.
+
+Goals:
+------
+- Upload files through a PHP interface
+- Add ability to download files
+- Restrict access using username and hashed password
+- Create multiple levels of user access
+- Implement SSL for security
