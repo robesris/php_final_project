@@ -12,7 +12,7 @@
   </div>
   {foreach from=$files item=file}
     <div class="row">
-      <div class="file col"><a href="{$file.path}">{$file.name}</a></div>
+      <div class="file col"><a href="./download.php?dl={$file.name}">{$file.name}</a></div>
       <div class="col">{$file.size}</div>
     </div>
   {/foreach}

@@ -1,5 +1,5 @@
 <?php
-  define('UPLOADDIR', './files');
+  define('UPLOADDIR', $_SERVER['DOCUMENT_ROOT'] . '/ulfiles');
   
   # The directory containing all the templates for this project
   define('TDIR', './');
