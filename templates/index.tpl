@@ -4,8 +4,6 @@
 
 <body>
   {include file=$header}
-  <div class="error">{$error_msg}</div>
-  <div class="success">{$msg}</div>
 
   <div>
     <div class="row bold">

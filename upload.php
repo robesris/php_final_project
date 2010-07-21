@@ -3,6 +3,12 @@
   require_once('./smarty_connect.php');
   require_once './constants.inc';
   
+  if (!($_SESSION['auth_user']['perms'] & UPLOAD)) {
+    $_SESSION['error_msg'] = "You do not have permission to upload files.";
+    header('Location: ./index.php');
+    exit();
+  }
+  
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($_FILES['file_ul']['tmp_name']) {
       $file = $_FILES['file_ul'];
@@ -31,9 +37,7 @@
     }
   }
   
-  if ($_SESSION['upload_error_msg']) {
-    $smarty->assign('upload_error_div', "<div class='error'>{$_SESSION['upload_error_msg']}</div>");
-    $_SESSION['upload_error_msg'] = "";
-  }
+
+  require_once './messages.inc';
   $smarty->display(TDIR . 'upload.tpl');
 ?>

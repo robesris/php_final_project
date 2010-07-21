@@ -2,7 +2,13 @@
   require_once './common.inc';
   require_once('./smarty_connect.php');
   require_once './constants.inc';
-  #echo UPLOADDIR . "/" . $_GET['dl'];
+  
+  if (!($_SESSION['auth_user']['perms'] & ADMIN)) {
+    $_SESSION['error_msg'] = "You do not have permission to download files.";
+    header('Location: ./index.php');
+    exit();
+  }
+  
   $filepath = UPLOADDIR . "/" . $_GET['dl'];
 
   header('Content-Description: File Transfer');

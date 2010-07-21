@@ -4,7 +4,6 @@
 
 <body>
   {include file=$header}
-  {$upload_error_div}
 
   <div class="row bold">
     <div class="col">Name</div>

@@ -4,7 +4,6 @@
 
 <body>
   {include file=$header}
-  {$upload_error_div}
   <div id="upload_form">
     <form enctype="multipart/form-data" action="{$smarty.server.PHP_SELF}" method="POST">
       <div class="question">

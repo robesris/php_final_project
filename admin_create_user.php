@@ -4,6 +4,12 @@
   require_once './constants.inc';
   require_once './database.inc';
   
+  if (!($_SESSION['auth_user']['perms'] & ADMIN)) {
+    $_SESSION['error_msg'] = "You do not have permission to create users.";
+    header('Location: ./index.php');
+    exit();
+  }
+  
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $login = $_POST['login'];
     $pw1   = $_POST['pw1'];
@@ -35,8 +41,5 @@
     exit();
   }
   
-  $smarty->assign('error_msg', $_SESSION['error_msg']);
-  $smarty->assign('msg', $_SESSION['msg']);
-  $_SESSION['error_msg'] = '';
-  $_SESSION['msg'] = '';
+  require_once './messages.inc';
   $smarty->display(TDIR . 'admin_create_user.tpl');
