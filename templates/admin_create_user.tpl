@@ -15,10 +15,10 @@
       <div><input type="text" name="login"></div>
     
       <div class="col">Password</div>
-      <div><input type="text" name="pw1"></div>
+      <div><input type="password" name="pw1"></div>
     
       <div class="col">Retype Password</div>
-      <div><input type="text" name="pw2"></div>
+      <div><input type="password" name="pw2"></div>
     
       <div class="col">Permissions</div>
       <div><input type="text" name="perms"></div>
