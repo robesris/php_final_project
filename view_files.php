@@ -1,5 +1,4 @@
 <?php
-  session_start();
   require_once './common.inc';
   require_once('./smarty_connect.php');
   require_once './constants.inc';

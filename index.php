@@ -1,5 +1,4 @@
 <?php
-  session_start();
   require_once './common.inc';
   require_once('./smarty_connect.php');
   require_once './constants.inc';
@@ -25,11 +24,11 @@
                                      'last'  => $last,
                                      'perms' => $perms);
       $_SESSION['msg'] = "You have been successfully logged in.";
-      if ($perms | ADMIN) {
+      if ($perms & ADMIN) {
         header('Location: ./admin_create_user.php');
-      } elseif ($perms | DOWNLOAD) {
+      } elseif ($perms & DOWNLOAD) {
         header('Location: ./view_files.php');
-      } elseif ($perms | UPLOAD) {
+      } elseif ($perms & UPLOAD) {
         header('Location: ./upload.php');
       } else {
         $_SESSION['msg'] = "You have been logged in, but don't have permission to do ANYTHING!";

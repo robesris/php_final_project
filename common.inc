@@ -1,4 +1,6 @@
 <?php
+include './auth.inc';
+
 function logout() {
   session_destroy();
   foreach ($_COOKIE as $cookie_name => $value) {
