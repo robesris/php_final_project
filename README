@@ -1,6 +1,12 @@
 6/26/2010
 Final Project for Programming PHP.
 
+Setup:
+1. Create databases
+2. Run script in sql folder to create users table
+3. Create folder for uploads outside of the app's document root
+4. Modify the UPLOADDIR path in constants.inc to reflect location of upload folder
+
 Goals:
 ------
 - Upload files through a PHP interface
